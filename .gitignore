@@ -1,0 +1,6 @@
+*.pkgx
+*.bak
+
+temp/
+kopieren/
+backup/
