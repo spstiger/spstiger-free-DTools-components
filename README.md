@@ -25,7 +25,7 @@ Im **Fenster 0 (Hauptfenster)** werden fünf Elemente angezeigt, die die Speiche
 
 Jedes Element zeigt grafisch die Belegung des Speichers durch den Benutzer, das System und den noch freien Bereich.
 
-![](C:\Users\famil\OneDrive\Dokumente\GitHub\spstiger-free-DTools-components\assets\2025-10-08-092621-inage.png)
+![](./assets/2025-10-08-092621-inage.png)
 
 ---
 
@@ -39,7 +39,7 @@ Für die Anzeige des benutzten und freien RAM-Speichers werden **Balkendiagramme
 
 - **Systemregister:** LW9136
 
-![](C:\Users\famil\OneDrive\Dokumente\GitHub\spstiger-free-DTools-components\assets\2025-10-08-092622-inage.png)
+![](./assets/2025-10-08-092622-inage.png)
 
 - **Datentyp:** 2 Words (32 Bit ohne Vorzeichen)
 
@@ -51,7 +51,7 @@ Für die Anzeige des benutzten und freien RAM-Speichers werden **Balkendiagramme
   
   - **Maximum:** 64 MB × 1024² = 67 108 864 Byte
   
-  <img title="" src="file:///C:/Users/famil/OneDrive/Dokumente/GitHub/spstiger-free-DTools-components/assets/2025-10-08-092623-inage.png" alt="" width="515">
+![](./assets/2025-10-08-092623-inage.png)
   
   Für andere Modelle:
 
@@ -69,7 +69,7 @@ Für die Anzeige des benutzten und freien RAM-Speichers werden **Balkendiagramme
   
   - **Ausrichtung:** *Links* (Balken wächst nach rechts)
 
-<img title="" src="file:///C:/Users/famil/OneDrive/Dokumente/GitHub/spstiger-free-DTools-components/assets/2025-10-08-092624-inage.png" alt="" width="465">
+![](./assets/2025-10-08-092624-inage.png)
 
 Beide Balkendiagramme werden **übereinander auf einer Bitmap-Komponente** platziert, die den vom System genutzten Speicherbereich darstellt.  
 So entsteht eine dreifarbige Gesamtanzeige:
@@ -108,7 +108,7 @@ Damit die Werte leicht ablesbar sind, werden die **Zahlenkomponenten skaliert**,
   
   - **Oberer Grenzwert:** 256
 
-<img title="" src="file:///C:/Users/famil/OneDrive/Dokumente/GitHub/spstiger-free-DTools-components/assets/2025-10-08-092625-inage.png" alt="" width="456">
+![](./assets/2025-10-08-092625-inage.png)
 
 Damit zeigen die Zahlenkomponenten den aktuellen RAM-Stand in **Megabyte** an – z. B. „27.4 MB frei“ oder „12.8 MB belegt“.
 
