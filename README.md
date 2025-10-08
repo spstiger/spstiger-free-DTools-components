@@ -25,9 +25,7 @@ Im **Fenster 0 (Hauptfenster)** werden fünf Elemente angezeigt, die die Speiche
 
 Jedes Element zeigt grafisch die Belegung des Speichers durch den Benutzer, das System und den noch freien Bereich.
 
-![](C:\Users\famil\AppData\Roaming\marktext\images\2025-10-07-22-23-32-image.png)
-
----
+![](C:\Users\famil\AppData\Roaming\marktext\images\2025-10-07-22-23-32-image.png)---
 
 ### Funktionsprinzip
 
