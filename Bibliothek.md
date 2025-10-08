@@ -107,3 +107,5 @@ Nach diesen Schritten steht deine **eigene Komponentenbibliothek** zur Verfügun
 - wiederverwendbar in allen Projekten
 
 - einfach zu erweitern, exportieren und importieren
+
+Neue Zeile
