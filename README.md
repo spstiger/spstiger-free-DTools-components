@@ -25,7 +25,9 @@ Im **Fenster 0 (Hauptfenster)** werden fünf Elemente angezeigt, die die Speiche
 
 Jedes Element zeigt grafisch die Belegung des Speichers durch den Benutzer, das System und den noch freien Bereich.
 
-![](C:\Users\famil\AppData\Roaming\marktext\images\2025-10-07-22-23-32-image.png)---
+![](C:\Users\famil\OneDrive\Dokumente\GitHub\spstiger-free-DTools-components\assets\2025-10-08-092621-inage.png)
+
+---
 
 ### Funktionsprinzip
 
@@ -34,22 +36,22 @@ Jedes Element zeigt grafisch die Belegung des Speichers durch den Benutzer, das 
 Für die Anzeige des benutzten und freien RAM-Speichers werden **Balkendiagramme** und **Zahlenkomponenten** mit **Systemvariablen** kombiniert.
 
 - **Benutzter RAM (User):**
+
+- **Systemregister:** LW9136
+
+![](C:\Users\famil\OneDrive\Dokumente\GitHub\spstiger-free-DTools-components\assets\2025-10-08-092622-inage.png)
+
+- **Datentyp:** 2 Words (32 Bit ohne Vorzeichen)
+
+- **Ausrichtung:** *Rechts* (Balken wächst nach links)
+
+- **Wertebereich (Beispiel 64 MB):**
   
-  - **Systemregister:** LW9136
+  - **Minimum:** 0
   
-  <img src="file:///C:/Users/famil/AppData/Roaming/marktext/images/2025-10-07-22-25-56-image.png" title="" alt="" width="510">
+  - **Maximum:** 64 MB × 1024² = 67 108 864 Byte
   
-  - **Datentyp:** 2 Words (32 Bit ohne Vorzeichen)
-  
-  - **Ausrichtung:** *Rechts* (Balken wächst nach links)
-  
-  - **Wertebereich (Beispiel 64 MB):**
-    
-    - **Minimum:** 0
-    
-    - **Maximum:** 64 MB × 1024² = 67 108 864 Byte
-  
-  <img src="file:///C:/Users/famil/AppData/Roaming/marktext/images/2025-10-07-22-26-53-image.png" title="" alt="" width="515">
+  <img title="" src="file:///C:/Users/famil/OneDrive/Dokumente/GitHub/spstiger-free-DTools-components/assets/2025-10-08-092623-inage.png" alt="" width="515">
   
   Für andere Modelle:
 
@@ -67,7 +69,7 @@ Für die Anzeige des benutzten und freien RAM-Speichers werden **Balkendiagramme
   
   - **Ausrichtung:** *Links* (Balken wächst nach rechts)
 
-<img src="file:///C:/Users/famil/AppData/Roaming/marktext/images/2025-10-07-22-29-06-image.png" title="" alt="" width="465">
+<img title="" src="file:///C:/Users/famil/OneDrive/Dokumente/GitHub/spstiger-free-DTools-components/assets/2025-10-08-092624-inage.png" alt="" width="465">
 
 Beide Balkendiagramme werden **übereinander auf einer Bitmap-Komponente** platziert, die den vom System genutzten Speicherbereich darstellt.  
 So entsteht eine dreifarbige Gesamtanzeige:
@@ -106,7 +108,7 @@ Damit die Werte leicht ablesbar sind, werden die **Zahlenkomponenten skaliert**,
   
   - **Oberer Grenzwert:** 256
 
-<img title="" src="file:///C:/Users/famil/AppData/Roaming/marktext/images/2025-10-07-22-31-17-image.png" alt="" width="456">
+<img title="" src="file:///C:/Users/famil/OneDrive/Dokumente/GitHub/spstiger-free-DTools-components/assets/2025-10-08-092625-inage.png" alt="" width="456">
 
 Damit zeigen die Zahlenkomponenten den aktuellen RAM-Stand in **Megabyte** an – z. B. „27.4 MB frei“ oder „12.8 MB belegt“.
 
@@ -129,4 +131,4 @@ Da Kinco-HMIs in der Regel nur **128 MB oder 256 MB Flash** besitzen, gibt es hi
 
 - Alle Adressen (LW9134, LW9136, LW9036) sind **systemweit gültig**.
 
-- Die Farben können nach Belieben im Balkendiagramm-Editor geändert werden.
+- Die Farben können nach Belieben im Balkendiagramm-Editor geändert werden
