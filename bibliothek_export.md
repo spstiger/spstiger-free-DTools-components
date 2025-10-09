@@ -127,7 +127,13 @@ Nach diesen Schritten steht deine **eigene Komponentenbibliothek** zur Verfügun
 
 - einfach zu erweitern, exportieren und importieren
 
-## Automatische Aktualisierung über GitHub-Verknüpfung (Junction)
+
+
+
+
+
+
+# Automatische Aktualisierung über GitHub-Verknüpfung (Junction)
 
 Diese Methode verbindet den **geklonten GitHub-Ordner** direkt mit dem  
 **vorgeschriebenen Kinco-Bibliothekspfad**.  
@@ -157,6 +163,8 @@ Es ist **kein Export oder Import mehr nötig.**
 
 - Rechtsklick → **Als Administrator ausführen**
 
+![](.\assets\2025-10-08-092631-inage.png)
+
 ---
 
 ### 2. Junction-Verknüpfungen für DTools-Versionen erstellen
@@ -165,9 +173,7 @@ Führe die folgenden Befehl aus:
 
 `mklink /J "C:\Kinco\Kinco DTools V4.x.x.x_xxxxxx\usrlib\spstiger-free-DTools-components"`
 
-
-
-Befehl erstellt **eine Verknüpfung** zwischen DTools-Version und dem GitHub-Ordner.
+![](.\assets\2025-10-08-092632-inage.png)
 
 ---
 
@@ -177,12 +183,18 @@ Mit folgendem Befehl kontrollieren:
 
 `dir "C:\Kinco\Kinco DTools V4.x.x.x_xxxxxx\usrlib"`
 
+![](.\assets\2025-10-08-092633-inage.png)
+
 Wenn alles korrekt ist, erscheint z. B.:
 
 `09.10.2025  15:10    <JUNCTION>   spstiger-free-DTools-components [C:\Users\<Benutzername>\Dokumente\GitHub\spstiger-free-DTools-components]`
 
+![](.\assets\2025-10-08-092634-inage.png)
+
 → Das bedeutet:  
 Die Verknüpfung ist aktiv und zeigt auf den GitHub-Ordner. 
+
+![](.\assets\2025-10-08-092635-inage.png)
 
 
 
@@ -194,6 +206,8 @@ Die Verknüpfung ist aktiv und zeigt auf den GitHub-Ordner.
 
 3. In der Liste die Bibliothek **„spstiger-free-DTools-components“** auswählen
 
+![](.\assets\2025-10-08-092637-inage.png)
+
 Die Komponenten stehen nun direkt zur Verfügung.
 
 ---
@@ -204,47 +218,29 @@ Wenn neue Elemente veröffentlicht werden:
 
 1. In **GitHub Desktop** → **Fetch origin** (oder **Pull**)
 
-2. DTools neu starten
+![](.\assets\2025-10-08-092636-inage.png)
 
-3. Neue oder geänderte Elemente sind sofort verfügbar
+1. DTools neu starten
 
-💡 Kein Export/Import mehr erforderlich.
+2. Neue oder geänderte Elemente sind sofort verfügbar
+
+Kein Export/Import mehr erforderlich.
 
 ---
 
-## ⚠️ Hinweise
+## Hinweise
 
 - Der Ordner **`usrlib`** ist **von Kinco fest vorgegeben** –  
   er darf **nicht verschoben oder umbenannt** werden.
 
 - DTools sollte **geschlossen** sein, während die Verknüpfungen erstellt oder gelöscht werden.
 
-- Wenn eine Verknüpfung erneuert werden soll:
-  
-  `rmdir "C:\Kinco\Kinco DTools V4.x.x.x_xxxxxx\usrlib\spstiger-free-DTools-components"`
-  
-  Danach den passenden `mklink /J`-Befehl erneut ausführen.
-
-- Für OneDrive-Ordner:  
-  Rechtsklick auf den GitHub-Ordner → **„Immer auf diesem Gerät behalten“**,  
-  damit Dateien auch offline verfügbar sind.
-
 ---
 
-## ✅ Vorteile dieser Methode
+## Vorteile dieser Methode
 
 - Eine Bibliotheksquelle für alle DTools-Versionen
 
 - Änderungen sofort verfügbar – keine Kopien notwendig
 
 - Automatische Synchronisierung über GitHub Desktop
-
-- Getestet mit:
-  
-  - Kinco DTools V4.3.0.3_240415
-  
-  - Kinco DTools V4.4.0.2_241209
-  
-  - Kinco DTools V4.4.0.2_250508
-  
-  - Kinco DTools V4.5.1_250508
