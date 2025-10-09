@@ -33,6 +33,24 @@ Jedes Element zeigt grafisch die Belegung des Speichers durch den Benutzer, das 
 
 #### 1. RAM-Anzeige
 
+Beim Erstellen eines Projekts in Kinco DTools ist zu beachten, dass **Bilder, Tabellen, Schriftarten und grafische Komponenten** den verfügbaren **RAM-Speicher** beeinflussen.  
+Das HMI lädt beim Start alle benötigten Ressourcen in den Arbeitsspeicher,  
+um eine flüssige Darstellung und schnelle Reaktionszeit zu gewährleisten.
+
+Je mehr grafische Elemente oder große Bitmaps verwendet werden,  
+desto mehr RAM wird belegt – unabhängig von der Gerätegröße (z. B. 64 MB, 128 MB oder 256 MB).
+
+### Typische Speicherverbraucher:
+
+| Elementtyp                                     | Beschreibung                                                 | Einfluss auf RAM                                       |
+| ---------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------ |
+| **Bilder / Bitmaps**                           | Hintergründe, Icons, Logos, Farbverläufe                     | 🔺 Hoch – werden vollständig in den RAM geladen        |
+| **Tabellen / Data Tables**                     | enthalten Datensätze wie Rezepte oder Parameterlisten        | 🔺 Mittel bis Hoch                                     |
+| **Schriftarten (Fonts)**                       | jede neue Schriftart oder Größe belegt zusätzlichen Speicher | 🔺 Mittel                                              |
+| **Makros / Scripts**                           | Steuerlogik oder interne Abläufe                             | 🔺 Gering bis Mittel                                   |
+| **Balkendiagramme, Zeigerinstrumente, Trends** | grafische Elemente mit Animation oder Aktualisierung         | 🔺 Mittel                                              |
+| **Kommunikationsvariablen**                    | häufig aktualisierte Modbus-Register                         | 🔺 Gering, aber bei vielen summiert sich der Verbrauch |
+
 Für die Anzeige des benutzten und freien RAM-Speichers werden **Balkendiagramme** und **Zahlenkomponenten** mit **Systemvariablen** kombiniert.
 
 - **Benutzter RAM (User):**
@@ -41,19 +59,23 @@ Für die Anzeige des benutzten und freien RAM-Speichers werden **Balkendiagramme
 
 ![](./assets/2025-10-08-092622-inage.png)
 
-- **Datentyp:** 2 Words (32 Bit ohne Vorzeichen)
-
-- **Ausrichtung:** *Rechts* (Balken wächst nach links)
-
-- **Wertebereich (Beispiel 64 MB):**
+- - **Datentyp:** 2 Words (32 Bit ohne Vorzeichen)
   
-  - **Minimum:** 0
+  - **Ausrichtung:** *Rechts* (Balken wächst nach links)
   
-  - **Maximum:** 64 MB × 1024² = 67 108 864 Byte
+  - **Wertebereich (Beispiel 64 MB):**
+    
+    - **Minimum:** 0
+    
+    - **Maximum:** 64 MB × 1024² = 67 108 864 Byte
+
+
 
 ![](./assets/2025-10-08-092623-inage.png)
 
-  Für andere Modelle:
+ 
+
+ Für andere Modelle:
 
 | RAM-Größe | Maximalwert (Bytes) |
 | --------- | ------------------- |
@@ -115,6 +137,12 @@ Damit zeigen die Zahlenkomponenten den aktuellen RAM-Stand in **Megabyte** an �
 ---
 
 #### 2. Flash-Anzeige
+
+Im Gegensatz zum RAM hat der Flash **keinen eigenen Systemspeicheranteil**.  
+Das bedeutet: das Betriebssystem und die HMI-Runtime **nutzen den Flash nicht aktiv** während des laufenden Betriebs,  
+sondern nur zum **Speichern oder Laden von Dateien**.
+
+
 
 Der **freie Flashspeicher** wird über das **Systemregister LW9036** dargestellt.  
 Da Kinco-HMIs in der Regel nur **128 MB oder 256 MB Flash** besitzen, gibt es hier nur zwei Varianten.
