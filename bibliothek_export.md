@@ -127,8 +127,6 @@ Nach diesen Schritten steht deine **eigene Komponentenbibliothek** zur Verfügun
 
 - einfach zu erweitern, exportieren und importieren
 
-
-
 ## Automatische Aktualisierung über GitHub-Verknüpfung (Junction)
 
 Diese Methode verbindet den **geklonten GitHub-Ordner** direkt mit dem  
@@ -144,7 +142,5 @@ Es ist **kein Export oder Import mehr nötig.**
 - **GitHub Desktop** ist installiert
 
 - Repository **`spstiger-free-DTools-components`** wurde bereits geklont  
-  (z. B. nach  
-  `C:\Users\<Benutzername>\Documents\GitHub\spstiger-free-DTools-components`)
 
 - Kinco DTools ist geschlossen
