@@ -97,9 +97,9 @@ Eigene Bibliotheken können exportiert und in andere Projekte oder Computer impo
   1. Menü öffnen: **Eigene Komponenten → Bibliothek exportieren**
   
   2. Danach den **Speicherort auswählen**, an dem die Bibliothek exportiert werden soll. DTools erstellt einen **Ordner mit allen zugehörigen Dateien** der Bibliothek, einschließlich einer **`.pgl`-Datei**
-  
+
 ![](.\assets\2025-10-08-092628-inage.png)
-  
+
   Diese exportierte Bibliothek kann anschließend auf einem anderen Rechner oder in einer anderen DTools-Version wieder importiert werden
 
 - #### **Importieren einer Bibliothek**
@@ -110,9 +110,9 @@ Eigene Bibliotheken können exportiert und in andere Projekte oder Computer impo
      (also den Ordner, der die `.pgl`-Datei enthält)
   
   3. Anschließend die **`.pgl`-Datei** direkt im Ordner markieren und **öffnen**
-     
+
 ![](.\assets\2025-10-08-092629-inage.png)
-     
+
      Erst jetzt wird die gewünschte Bibliothek in DTools importiert und erscheint in der **Liste der Komponentenbibliotheken**
 
 ---
@@ -126,3 +126,25 @@ Nach diesen Schritten steht deine **eigene Komponentenbibliothek** zur Verfügun
 - wiederverwendbar in allen Projekten
 
 - einfach zu erweitern, exportieren und importieren
+
+
+
+## Automatische Aktualisierung über GitHub-Verknüpfung (Junction)
+
+Diese Methode verbindet den **geklonten GitHub-Ordner** direkt mit dem  
+**vorgeschriebenen Kinco-Bibliothekspfad**.  
+Dadurch werden Änderungen (neue oder aktualisierte Komponenten) automatisch  
+in **Kinco DTools** sichtbar, sobald das Repository über **GitHub Desktop** aktualisiert wird.  
+Es ist **kein Export oder Import mehr nötig.**
+
+---
+
+### Voraussetzungen
+
+- **GitHub Desktop** ist installiert
+
+- Repository **`spstiger-free-DTools-components`** wurde bereits geklont  
+  (z. B. nach  
+  `C:\Users\<Benutzername>\Documents\GitHub\spstiger-free-DTools-components`)
+
+- Kinco DTools ist geschlossen
