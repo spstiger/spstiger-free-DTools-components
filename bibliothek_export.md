@@ -54,7 +54,7 @@ der **Name der eigenen Bibliothek** (z. B. `spstiger_components`) angezeigt wird
 Wenn der Name dort erscheint, befindet man sich **in der richtigen Bibliothek**  
 und kann die Komponente sicher speichern.
 
-![](C:\Users\famil\AppData\Roaming\marktext\images\2025-10-09-13-26-36-image.png)
+![](./assets/2025-10-08-092630-inage.png)
 
 **Vorgehensweise:**
 
@@ -98,7 +98,7 @@ Eigene Bibliotheken können exportiert und in andere Projekte oder Computer impo
   
   2. Danach den **Speicherort auswählen**, an dem die Bibliothek exportiert werden soll. DTools erstellt einen **Ordner mit allen zugehörigen Dateien** der Bibliothek, einschließlich einer **`.pgl`-Datei**
   
-  ![](.\assets\2025-10-08-092628-inage.png)
+![](.\assets\2025-10-08-092628-inage.png)
   
   Diese exportierte Bibliothek kann anschließend auf einem anderen Rechner oder in einer anderen DTools-Version wieder importiert werden
 
@@ -111,7 +111,7 @@ Eigene Bibliotheken können exportiert und in andere Projekte oder Computer impo
   
   3. Anschließend die **`.pgl`-Datei** direkt im Ordner markieren und **öffnen**
      
-     ![](.\assets\2025-10-08-092629-inage.png)
+![](.\assets\2025-10-08-092629-inage.png)
      
      Erst jetzt wird die gewünschte Bibliothek in DTools importiert und erscheint in der **Liste der Komponentenbibliotheken**
 
