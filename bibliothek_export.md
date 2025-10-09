@@ -144,3 +144,107 @@ Es ist **kein Export oder Import mehr nötig.**
 - Repository **`spstiger-free-DTools-components`** wurde bereits geklont  
 
 - Kinco DTools ist geschlossen
+
+- Rechtsklick → **Als Administrator ausführen**
+
+
+
+## Schritt-für-Schritt-Anleitung
+
+### 1. Windows-Eingabeaufforderung als Administrator öffnen
+
+- Im Startmenü nach **cmd** suchen
+
+- Rechtsklick → **Als Administrator ausführen**
+
+---
+
+### 2. Junction-Verknüpfungen für DTools-Versionen erstellen
+
+Führe die folgenden Befehl aus:
+
+`mklink /J "C:\Kinco\Kinco DTools V4.x.x.x_xxxxxx\usrlib\spstiger-free-DTools-components"`
+
+
+
+Befehl erstellt **eine Verknüpfung** zwischen DTools-Version und dem GitHub-Ordner.
+
+---
+
+### 3. Verknüpfungen prüfen
+
+Mit folgendem Befehl kontrollieren:
+
+`dir "C:\Kinco\Kinco DTools V4.x.x.x_xxxxxx\usrlib"`
+
+Wenn alles korrekt ist, erscheint z. B.:
+
+`09.10.2025  15:10    <JUNCTION>   spstiger-free-DTools-components [C:\Users\<Benutzername>\Dokumente\GitHub\spstiger-free-DTools-components]`
+
+→ Das bedeutet:  
+Die Verknüpfung ist aktiv und zeigt auf den GitHub-Ordner. 
+
+
+
+### 4. In DTools prüfen
+
+1. DTools starten
+
+2. Rechtsklick auf freie Fläche → **Eigene Komponenten → Eigene Komponenten nutzen**
+
+3. In der Liste die Bibliothek **„spstiger-free-DTools-components“** auswählen
+
+Die Komponenten stehen nun direkt zur Verfügung.
+
+---
+
+### 5. Aktualisierung über GitHub Desktop
+
+Wenn neue Elemente veröffentlicht werden:
+
+1. In **GitHub Desktop** → **Fetch origin** (oder **Pull**)
+
+2. DTools neu starten
+
+3. Neue oder geänderte Elemente sind sofort verfügbar
+
+💡 Kein Export/Import mehr erforderlich.
+
+---
+
+## ⚠️ Hinweise
+
+- Der Ordner **`usrlib`** ist **von Kinco fest vorgegeben** –  
+  er darf **nicht verschoben oder umbenannt** werden.
+
+- DTools sollte **geschlossen** sein, während die Verknüpfungen erstellt oder gelöscht werden.
+
+- Wenn eine Verknüpfung erneuert werden soll:
+  
+  `rmdir "C:\Kinco\Kinco DTools V4.x.x.x_xxxxxx\usrlib\spstiger-free-DTools-components"`
+  
+  Danach den passenden `mklink /J`-Befehl erneut ausführen.
+
+- Für OneDrive-Ordner:  
+  Rechtsklick auf den GitHub-Ordner → **„Immer auf diesem Gerät behalten“**,  
+  damit Dateien auch offline verfügbar sind.
+
+---
+
+## ✅ Vorteile dieser Methode
+
+- Eine Bibliotheksquelle für alle DTools-Versionen
+
+- Änderungen sofort verfügbar – keine Kopien notwendig
+
+- Automatische Synchronisierung über GitHub Desktop
+
+- Getestet mit:
+  
+  - Kinco DTools V4.3.0.3_240415
+  
+  - Kinco DTools V4.4.0.2_241209
+  
+  - Kinco DTools V4.4.0.2_250508
+  
+  - Kinco DTools V4.5.1_250508
