@@ -127,12 +127,6 @@ Nach diesen Schritten steht deine **eigene Komponentenbibliothek** zur Verfügun
 
 - einfach zu erweitern, exportieren und importieren
 
-
-
-
-
-
-
 # Automatische Aktualisierung über GitHub-Verknüpfung (Junction)
 
 Diese Methode verbindet den **geklonten GitHub-Ordner** direkt mit dem  
@@ -152,8 +146,6 @@ Es ist **kein Export oder Import mehr nötig.**
 - Kinco DTools ist geschlossen
 
 - Rechtsklick → **Als Administrator ausführen**
-
-
 
 ## Schritt-für-Schritt-Anleitung
 
@@ -196,8 +188,6 @@ Die Verknüpfung ist aktiv und zeigt auf den GitHub-Ordner.
 
 ![](.\assets\2025-10-08-092635-inage.png)
 
-
-
 ### 4. In DTools prüfen
 
 1. DTools starten
@@ -227,6 +217,116 @@ Wenn neue Elemente veröffentlicht werden:
 Kein Export/Import mehr erforderlich.
 
 ---
+
+## Hinweise
+
+- Der Ordner **`usrlib`** ist **von Kinco fest vorgegeben** –  
+  er darf **nicht verschoben oder umbenannt** werden.
+
+- DTools sollte **geschlossen** sein, während die Verknüpfungen erstellt oder gelöscht werden.
+
+---
+
+## Vorteile dieser Methode
+
+- Eine Bibliotheksquelle für alle DTools-Versionen
+
+- Änderungen sofort verfügbar – keine Kopien notwendig
+
+- Automatische Synchronisierung über GitHub Desktop
+
+# Automatische Aktualisierung über GitHub
+
+Die Bibliothek **„spstiger-free-DTools-components“** kann auf zwei Arten verwendet werden:  
+entweder direkt im `usrlib`-Ordner von **Kinco DTools** oder über eine **Junction-Verknüpfung**.  
+In beiden Fällen wird die Bibliothek **automatisch aktualisiert**,  
+sobald das Repository über **GitHub Desktop** synchronisiert wird.  
+Ein manuelles Exportieren oder Kopieren ist nicht nötig.
+
+
+
+### Anleitung
+
+1. **GitHub öffnen**  
+   Besuche die Seite des GitHub-Benutzers **spstiger**:  
+   👉 [spstiger (spstiger) · GitHub](https://github.com/spstiger)
+
+2. **Repository auswählen**  
+   
+   In der Liste der Repositories das Projekt  
+   **`spstiger-free-DTools-components`** öffnen.
+
+3. **Download starten**  
+   Im Repository oben rechts auf den **grünen Button „Code“** klicken.
+
+4. **ZIP-Datei herunterladen**  
+   Im Menü **„Download ZIP“** auswählen.  
+   Der Download startet automatisch (meist im Ordner **Downloads**).
+
+5. **Datei entpacken (extrahieren)**  
+   Nach dem Herunterladen die ZIP-Datei mit Rechtsklick →  
+   **„Alle extrahieren…“** entpacken.
+   
+   Es entsteht ein Ordner, z. B.:
+   
+   `C:\Users\<Benutzername>\Downloads\spstiger-free-DTools-components-main`
+
+6. **Variante A – Ordner direkt in DTools verwenden**
+   
+   Kopiere den entpackten Ordner direkt nach:
+   
+   `C:\Kinco\Kinco DTools V4.x.x.x_xxxxxx\usrlib\`
+   
+   Damit erkennt DTools die Bibliothek sofort.  
+   Wenn dieser Ordner das geklonte GitHub-Repository ist (z. B. über GitHub Desktop),  
+   wird er bei jedem **„Fetch origin“** automatisch mit den neuesten Komponenten aktualisiert.
+   
+   **Variante B - Windows-Eingabeaufforderung als Administrator öffnen**
+   
+   Im Startmenü nach **cmd** suchen Rechtsklick → **Als Administrator ausführen**
+
+7. **Junction-Verknüpfungen für DTools-Versionen erstellen**
+   
+   Führe die folgenden Befehl aus:
+   
+   `mklink /J "C:\Kinco\Kinco DTools V4.x.x.x_xxxxxx\usrlib\spstiger-free-DTools-components"`
+
+8. **Verknüpfungen prüfen**
+   
+   Mit folgendem Befehl kontrollieren:
+   
+   `dir "C:\Kinco\Kinco DTools V4.x.x.x_xxxxxx\usrlib"`
+   
+   Wenn alles korrekt ist, erscheint z. B.:
+   
+   `09.10.2025 15:10 <JUNCTION> spstiger-free-DTools-components [C:\Users\<Benutzername>\Dokumente\GitHub\spstiger-free-DTools-components]`
+   
+   → Das bedeutet:  
+   Die Verknüpfung ist aktiv und zeigt auf den GitHub-Ordner.
+
+9. **In DTools prüfen**
+   
+   DTools starten
+   
+   Rechtsklick auf freie Fläche → **Eigene Komponenten → Eigene Komponenten nutzen**
+   
+   In der Liste die Bibliothek **„spstiger-free-DTools-components“** auswählen
+   
+   Die Komponenten stehen nun direkt zur Verfügung.
+
+10. **Aktualisierung über GitHub Desktop**
+    
+    Wenn neue Elemente veröffentlicht werden:
+    
+    In **GitHub Desktop** → **Fetch origin** (oder **Pull**)
+    
+    DTools neu starten
+    
+    Neue oder geänderte Elemente sind sofort verfügbar
+
+
+
+
 
 ## Hinweise
 
