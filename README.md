@@ -69,11 +69,7 @@ Für die Anzeige des benutzten und freien RAM-Speichers werden **Balkendiagramme
     
     - **Maximum:** 64 MB × 1024² = 67 108 864 Byte
 
-
-
 ![](./assets/2025-10-08-092623-inage.png)
-
- 
 
  Für andere Modelle:
 
@@ -141,8 +137,6 @@ Damit zeigen die Zahlenkomponenten den aktuellen RAM-Stand in **Megabyte** an �
 Im Gegensatz zum RAM hat der Flash **keinen eigenen Systemspeicheranteil**.  
 Das bedeutet: das Betriebssystem und die HMI-Runtime **nutzen den Flash nicht aktiv** während des laufenden Betriebs,  
 sondern nur zum **Speichern oder Laden von Dateien**.
-
-
 
 Der **freie Flashspeicher** wird über das **Systemregister LW9036** dargestellt.  
 Da Kinco-HMIs in der Regel nur **128 MB oder 256 MB Flash** besitzen, gibt es hier nur zwei Varianten.

@@ -9,9 +9,7 @@ empfiehlt es sich, eine **eigene Bibliothek** anzulegen.
 
 ### 1. Voraussetzungen
 
-Bevor eine Komponente gespeichert werden kann,  
-müssen alle zugehörigen Elemente im HMI-Projekt **fertig aufgebaut und korrekt positioniert** sein  
-(z. B. Balkendiagramme, Zahlenkomponenten, Texte).
+Bevor eine Komponente gespeichert werden kann, müssen alle zugehörigen Elemente im HMI-Projekt **fertig aufgebaut und korrekt positioniert** sein (z. B. Balkendiagramme, Zahlenkomponenten, Texte).
 
 ---
 
@@ -40,6 +38,8 @@ müssen alle zugehörigen Elemente im HMI-Projekt **fertig aufgebaut und korrekt
 
 5. Mit **OK** bestätigen
 
+![](./assets/2025-10-08-092626-inage.png)
+
 > Dadurch wird eine neue, eigene Bibliothek erstellt.  
 > Die vorinstallierte Standardbibliothek von Kinco DTools bleibt unverändert.
 
@@ -54,6 +54,8 @@ der **Name der eigenen Bibliothek** (z. B. `spstiger_components`) angezeigt wird
 Wenn der Name dort erscheint, befindet man sich **in der richtigen Bibliothek**  
 und kann die Komponente sicher speichern.
 
+![](C:\Users\famil\AppData\Roaming\marktext\images\2025-10-09-13-26-36-image.png)
+
 **Vorgehensweise:**
 
 1. Menü wählen: **„Eigene Komponenten speichern“**
@@ -62,6 +64,8 @@ und kann die Komponente sicher speichern.
    (z. B. `RAM_Flash_Monitor`)
 
 3. Mit **OK** bestätigen
+
+![](./assets/2025-10-08-092627-inage.png)
 
 > Pro Speichervorgang kann **immer nur eine Komponente** gespeichert werden. Wird versehentlich die Standardbibliothek ausgewählt,  
 > landet die Komponente dort – das sollte vermieden werden.
@@ -88,13 +92,28 @@ Nach erfolgreicher Erstellung kann die Bibliothek in jedem Projekt genutzt werde
 
 Eigene Bibliotheken können exportiert und in andere Projekte oder Computer importiert werden:
 
-- **Exportieren:**  
-  Menü → *Eigene Komponenten → Bibliothek exportieren*
+- #### **Exportieren einer Bibliothek**
+  
+  1. Menü öffnen: **Eigene Komponenten → Bibliothek exportieren**
+  
+  2. Danach den **Speicherort auswählen**, an dem die Bibliothek exportiert werden soll. DTools erstellt einen **Ordner mit allen zugehörigen Dateien** der Bibliothek, einschließlich einer **`.pgl`-Datei**
+  
+  ![](.\assets\2025-10-08-092628-inage.png)
+  
+  Diese exportierte Bibliothek kann anschließend auf einem anderen Rechner oder in einer anderen DTools-Version wieder importiert werden
 
-- **Importieren:**  
-  Menü → *Eigene Komponenten → Bibliothek importieren*
-
-So lassen sich eigene Komponenten wie Bausteine zwischen unterschidliche Versionene des DTools austauschen.
+- #### **Importieren einer Bibliothek**
+  
+  1. Menü öffnen: **Eigene Komponenten → Bibliothek importieren**
+  
+  2. Im folgenden Fenster den **Ordner der exportierten Bibliothek** auswählen  
+     (also den Ordner, der die `.pgl`-Datei enthält)
+  
+  3. Anschließend die **`.pgl`-Datei** direkt im Ordner markieren und **öffnen**
+     
+     ![](.\assets\2025-10-08-092629-inage.png)
+     
+     Erst jetzt wird die gewünschte Bibliothek in DTools importiert und erscheint in der **Liste der Komponentenbibliotheken**
 
 ---
 
@@ -107,5 +126,3 @@ Nach diesen Schritten steht deine **eigene Komponentenbibliothek** zur Verfügun
 - wiederverwendbar in allen Projekten
 
 - einfach zu erweitern, exportieren und importieren
-
-Neue Zeile
