@@ -243,8 +243,6 @@ In beiden Fällen wird die Bibliothek **automatisch aktualisiert**,
 sobald das Repository über **GitHub Desktop** synchronisiert wird.  
 Ein manuelles Exportieren oder Kopieren ist nicht nötig.
 
-
-
 ### Anleitung
 
 1. **GitHub öffnen**  
@@ -323,10 +321,6 @@ Ein manuelles Exportieren oder Kopieren ist nicht nötig.
     DTools neu starten
     
     Neue oder geänderte Elemente sind sofort verfügbar
-
-
-
-
 
 ## Hinweise
 
